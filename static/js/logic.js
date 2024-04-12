@@ -12,7 +12,7 @@ L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_toke
     'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
   maxZoom: 18,
   id: "mapbox/streets-v11",
-  accessToken: MAPBOX_ACCESS_TOKEN
+  accessToken: "sk.eyJ1Ijoic3RpY2tvbTEiLCJhIjoiY2x1dzNleGM1MDhkZTJpcGZxaGp2bnh6dyJ9.StoLAahk-5tiPimy0ENYLw"
 }).addTo(myMap);
 
 // Function to set marker color based on depth
