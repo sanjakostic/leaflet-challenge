@@ -1,4 +1,3 @@
-import { MAPBOX_ACCESS_TOKEN } from "./config.js";
 // Create a map object
 var myMap = L.map("map", {
   center: [37.09, -95.71],
@@ -6,13 +5,8 @@ var myMap = L.map("map", {
 });
 
 // Add a tile layer (the background map image) to my map
-L.tileLayer("https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}", {
-  attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-    '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-    'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-  maxZoom: 18,
-  id: "mapbox/streets-v11",
-  accessToken: "sk.eyJ1Ijoic3RpY2tvbTEiLCJhIjoiY2x1dzNleGM1MDhkZTJpcGZxaGp2bnh6dyJ9.StoLAahk-5tiPimy0ENYLw"
+L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors'
 }).addTo(myMap);
 
 // Function to set marker color based on depth
